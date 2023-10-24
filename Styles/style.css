@@ -1,0 +1,361 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    background-color: #030303;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    height: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos na vertical */
+    z-index: 2;
+}
+
+#upper-divs-container {
+    height: 107px;
+    background-color: #030303; /* Cor de fundo preta para o cabeçalho */
+    display: flex;
+    justify-content: space-between; /* Alinha "DUCATIBR" e "MYDUCATI" nos cantos horizontais */
+    align-items: center; /* Alinha verticalmente ao centro */
+    width: 100%; /* Garante que ocupem a largura total do cabeçalho */
+}
+
+#DUCATIBR {
+    display: flex;
+    flex-direction: row; /* Alinha "DUCATIBR" e "MYDUCATI" horizontalmente */
+    align-items: center;
+    margin-left: 43px;
+}
+
+#DUCATIBR p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#br-icon {
+    margin-left: 6px;
+    width: 37px;
+    height: 28.446px;
+    flex-shrink: 0;
+}
+
+#MYDUCATI {
+    display: flex;
+    flex-direction: row; /* Alinha "DUCATIBR" e "MYDUCATI" horizontalmente */
+    align-items: center;
+    margin-right: 35px;
+}
+
+#MYDUCATI p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+
+#whitebar {
+    background-color:#F7F7F7;
+    height: 113px;
+    width: 89%;
+    border-radius: 5px;
+    opacity: 70%;
+    padding-top: 35px ;
+    padding-left: 118px;
+    padding-right:55px;
+
+}
+
+nav#whitebar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+nav#whitebar ul li{
+    list-style: none;
+
+}
+nav#whitebar ul .word {
+    list-style: none;
+    margin-top: 20px;
+   
+
+    
+}
+
+nav#whitebar ul li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #000000;
+}
+
+ul .menu1 a {
+    position: relative;
+    top: 20px;
+    right: 0px;
+    
+}
+
+ul .menu2 a {
+    position: relative;
+    top: 20px;
+    right: 140px;
+    
+}
+
+ul .menu3 a {
+    position: relative;
+    top: 20px;
+    right: 270px;
+    
+}
+
+ul .menu4 a {
+    position: relative;
+    top: 23px;
+    left: 200px;
+    
+}
+
+ul #logo{
+    position: relative;
+    right: 175px;
+}
+
+ul #cart{
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Alinha "DUCATIBR" e "MYDUCATI" horizontalmente */
+    align-items: center;
+    position: relative;
+    right: 20px;
+}
+
+#cart img {
+    margin-right: 0; /* Remove a margem direita da imagem dentro de #cart */
+}
+
+ul img{
+    margin-right: 130px;
+}
+
+#banner{
+    min-height: 1700px; /* Defina uma altura mínima para a seção do banner */
+    width: 100%;
+    background-image: url("../images/Bg_header_banner\ \(1\).png");
+    background-size: cover; /* Esta propriedade estica a imagem para cobrir toda a seção */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+    
+}
+
+#propaganda{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1100px; /* Ajuste a distância do topo em pixels conforme necessário */
+    right: 150px; /* Ajuste a distância do canto direito em pixels conforme necessário */
+    text-align: right;
+    
+}
+#texto1, #texto2, #texto3{
+    color: #F7F7F7;
+    font-family: Roboto;
+}
+
+#texto1 {
+    font-size: 42px;
+}
+
+#texto2{
+    font-size: 89px ;
+    margin-bottom: 10px;
+}
+
+
+#texto3{
+    margin-bottom: -10px;
+    width: 181px;
+    height: 28px;
+}
+button {
+    position: relative;
+    left:330px;
+    background-color: #FF0000;
+    border-radius: 2px;
+    padding-top: 20px;
+    padding-left: -30px;
+    padding-right: -30px;
+    padding-bottom: 20px;
+    width: 192px;
+    height: 69px;
+    z-index: 4;
+}
+
+
+
+#endpage {
+    min-height: 1700px;
+    position: relative;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+    background-image: url('../images/bg-ducati.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#endpage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5; /* Ajuste a opacidade conforme desejado (0 a 1) */
+}
+
+#loja{
+    padding:60px 132px 37px 132px ;
+}
+
+#fila1 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#loja #fila1 #card1, #card2, #card3, #card4{
+    position:relative;
+    left: 0px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 5px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    width: 240px;
+    height: 316px;
+
+}
+
+
+
+.ret{
+    margin-top: 10px;
+    background-color: #FF0000;
+    width: 180px;
+    min-height: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    border-radius: 9px;
+}
+
+.ret p{
+    text-align: center;
+    color: #F7F7F7;
+    font-family: Roboto;
+}
+
+
+#fila2 {
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#loja #fila2 #card1, #card2, #card3, #card4{
+    position:relative;
+    left: 0px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 5px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    width: 240px;
+    height: 316px;
+
+}
+
+footer{
+    position: relative;
+    
+    top:450px;
+    min-height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinha "DUCATIBR" e "MYDUCATI" nos cantos horizontais */
+    align-items: center; /* Alinha verticalmente ao centro */
+    width: 100%; /* Garante que ocupem a largura total do cabeçalho */
+}
+
+#foot1{
+    display: flex;
+    flex-direction: column; /* Alinha "DUCATIBR" e "MYDUCATI" horizontalmente */
+    align-items: left;
+    margin-left: 55px;
+    
+}
+
+#foot2{
+    display: flex;
+    flex-direction: row; /* Alinha "DUCATIBR" e "MYDUCATI" horizontalmente */
+    align-items: top;
+    margin-right: 35px;
+    justify-content: space-around ;
+}
+
+#foot25{
+    display: flex;
+    flex-direction: row; /* Alinha "DUCATIBR" e "MYDUCATI" horizontalmente */
+    align-items: center;
+    margin-right: 05px;
+    margin-left: 45px;
+    justify-content: space-around ;
+}
+
+
+
+
+#foot1 p {
+    font-family: Roboto;
+    color: #F7F7F7;
+    font-size: 22px;
+    margin-bottom: 10px;
+} 
+
+#foot2 p{
+    font-family: Roboto;
+    color: #F7F7F7;
+}
+
